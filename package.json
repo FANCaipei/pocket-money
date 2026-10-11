@@ -1,0 +1,19 @@
+{
+  "name": "pocket-money",
+  "version": "2.0.0",
+  "private": true,
+  "description": "儿童零花钱管理应用 —— 入金、消费记账、余额查看、闲钱理财与收益统计（React + Tailwind 前端，Express + SQLite 后端，Docker 一键部署）",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "npm --prefix client run build",
+    "dev:client": "npm --prefix client run dev",
+    "smoke": "node scripts/smoke-test.mjs"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
